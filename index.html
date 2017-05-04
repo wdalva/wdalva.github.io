@@ -9,6 +9,12 @@ function setFrame() {
 	$('#frame').toggle();
 	$('#frame').attr('src', 'https://www.youtube.com/embed/' + $('#yv').val());
 }
+
+$(document).keypress(function(e) {
+    if(e.which == 13) {
+        setFrame();
+    }
+});
 </script>
 
 </head>
