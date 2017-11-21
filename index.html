@@ -10,10 +10,10 @@ function setFrame() {
 
 	switch($('input:radio[name="contentType"]:checked').val()) {
 		case 'video':
-			$('#frame').attr('src', 'https://www.youtube.com/embed/' + $('#yv').val());
+			$('#frame').attr('src', 'https://www.youtube.com/embed/' + $('#yv').val() + '?autoplay=1');
 			break;
 		case 'playlist':
-			$('#frame').attr('src', 'https://www.youtube.com/embed?listType=playlist&list=' + $('#yv').val());
+			$('#frame').attr('src', 'https://www.youtube.com/embed?listType=playlist&list=' + $('#yv').val() + '&autoplay=1');
 	}
 	
 	$('input:radio[name="contentType"]').toggle();
