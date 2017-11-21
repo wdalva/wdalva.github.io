@@ -20,6 +20,12 @@ $(document).keypress(function(e) {
 </head>
 <body style="margin:0px;padding:0px;overflow:hidden">
 	<input type="text" id="yv" width="100px" autofocus></input>
+	
+	<input type="radio" id="video" name="contentType" value="video">
+    	<label for="video">Video</label>
+	<input type="radio" id="playlist" name="contentType" value="playlist">
+    	<label for="playlist">Playlist</label>
+	
 	<input type="submit" id="set" value="Submit" onClick="setFrame();"></input>
     <iframe id="frame" src="" frameborder="0" style="overflow:hidden;height:100%;width:100%;display:none;" height="100%" width="100%"></iframe>
 </body>
