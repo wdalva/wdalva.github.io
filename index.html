@@ -7,17 +7,15 @@ function setFrame() {
 	$('#yv').toggle();
 	$('#set').toggle();
 	$('#frame').toggle();
-	var val = $('input:radio[name="contentType"]:checked').val();
-	alert(val);
+
 	switch($('input:radio[name="contentType"]:checked').val()) {
 		case 'video':
 			$('#frame').attr('src', 'https://www.youtube.com/embed/' + $('#yv').val());
 			break;
 		case 'playlist':
 			$('#frame').attr('src', 'https://www.youtube.com/embed?listType=playlist&list=' + $('#yv').val());
-			var src = $('#frame').attr('src')
-			alert(src);
 	}
+	
 	$('input:radio[name="contentType"]').toggle();
 	$('label').toggle();
 }
