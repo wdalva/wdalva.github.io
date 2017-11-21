@@ -13,9 +13,11 @@ function setFrame() {
 			break;
 		case 'playlist':
 			$('#frame').attr('src', 'https://www.youtube.com/embed?listType=playlist&list=' + $('#yv').val());
-			alert($('#frame').attr('src'));
+			var src = $('#frame').attr('src')
+			alert(src);
 	}
 	$('input:radio[name="contentType"]').toggle();
+	$('label').toggle();
 }
 
 $(document).keypress(function(e) {
