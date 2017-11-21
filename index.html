@@ -7,9 +7,9 @@ function setFrame() {
 	$('#yv').toggle();
 	$('#set').toggle();
 	$('#frame').toggle();
-	var val = $('input:radio[name="contentType"]').val();
+	var val = $('input:radio[name="contentType"]:checked').val();
 	alert(val);
-	switch($('input:radio[name="contentType"]').val()) {
+	switch($('input:radio[name="contentType"]:checked').val()) {
 		case 'video':
 			$('#frame').attr('src', 'https://www.youtube.com/embed/' + $('#yv').val());
 			break;
